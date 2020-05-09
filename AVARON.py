@@ -3,7 +3,7 @@ from discord.ext import commands
 from AVARON_func import *
 
 bot = commands.Bot(command_prefix='/') 
-token = os.environ['DISCORD_BOT_TOKEN']
+token = DISCORD_BOT_TOKEN
 CHANNEL_ID = 706355172301078577
 STATUS_CHANNEL_ID = 707196746824024074
 
