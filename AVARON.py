@@ -3,6 +3,7 @@ from discord.ext import commands
 from AVARON_func import *
 
 bot = commands.Bot(command_prefix='/') 
+token = os.environ['DISCORD_BOT_TOKEN']
 CHANNEL_ID = 706355172301078577
 STATUS_CHANNEL_ID = 707196746824024074
 
@@ -293,13 +294,13 @@ async def show_status(ctx):
 @bot.command('再起動')
 async def bye_reboot(ctx):
     bot.clear()
-    bot.run(TOKEN)
+    bot.run(token)
 
 # bot切断
-@bot.command()
-async def bye(ctx):
-    await bot.logout()
-    await sys.exit()
+# @bot.command()
+# async def bye(ctx):
+#    await bot.logout()
+#    await sys.exit()
 
 # botの接続と起動
 # （botアカウントのアクセストークンを入れてください）
