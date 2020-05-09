@@ -291,17 +291,17 @@ async def show_status(ctx):
         channel = bot.get_channel(STATUS_CHANNEL_ID)
         await channel.send(msg)
 
-# bot切断
-@bot.command('再起動')
-async def bye_reboot(ctx):
-    bot.clear()
-    bot.run(token)
+# bot切断(sakujo)
+# @bot.command('再起動')
+# async def bye_reboot(ctx):
+#    bot.clear()
+#    bot.run(token)
 
-# bot切断
-@bot.command()
-async def bye(ctx):
-    await bot.logout()
-    await sys.exit()
+# bot切断(sakujo)
+# @bot.command()
+# async def bye(ctx):
+#    await bot.logout()
+#    await sys.exit()
 
 # botの接続と起動
 # （botアカウントのアクセストークンを入れてください）
