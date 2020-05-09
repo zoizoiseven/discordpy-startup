@@ -303,4 +303,4 @@ async def bye(ctx):
 
 # botの接続と起動
 # （botアカウントのアクセストークンを入れてください）
-bot.run(TOKEN)
+bot.run(DISCORD_BOT_TOKEN)
