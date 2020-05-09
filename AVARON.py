@@ -2,7 +2,6 @@ import discord
 from discord.ext import commands
 from AVARON_func import *
 
-TOKEN = "NzA2MzQ3ODE3NzM1ODE1MjU4.Xq48Lw.BqSODHhyBmku6zQH8Oci38WkUSg"
 bot = commands.Bot(command_prefix='/') 
 CHANNEL_ID = 706355172301078577
 STATUS_CHANNEL_ID = 707196746824024074
