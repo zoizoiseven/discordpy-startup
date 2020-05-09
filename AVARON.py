@@ -297,11 +297,11 @@ async def bye_reboot(ctx):
     bot.run(token)
 
 # bot切断
-# @bot.command()
-# async def bye(ctx):
-#    await bot.logout()
-#    await sys.exit()
+@bot.command()
+async def bye(ctx):
+    await bot.logout()
+    await sys.exit()
 
 # botの接続と起動
 # （botアカウントのアクセストークンを入れてください）
-bot.run(DISCORD_BOT_TOKEN)
+bot.run(token)
